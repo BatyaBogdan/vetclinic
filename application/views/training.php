@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <h2 class="text-center mt-3">Запись на обучение собак по дрессировке</h2>
+        <form action="client/new_order_training" method="post">
+            <input type="hidden" name="id_training" value="<?=$id_training?>">
+            <input type="hidden" name="price" value="<?=$price?>">
+            <div class="mb-3">
+                <label for="phone" class="form-label">Номер телефона</label>
+                <input type="tel" class="form-control" name="phone" required>
+            </div>
+            <div class="mb-3">
+                <label for="type_animal" class="form-label">Тип животного</label>
+                <input type="text" class="form-control" name="type_animal" required>
+            </div>
+            <div class="mb-3">
+                <label for="breed" class="form-label">Пород животных</label>
+                <input type="text" class="form-control" name="breed" required>
+            </div>
+            <div class="mb-3">
+                <label for="nickname" class="form-label">Кличка</label>
+                <input type="text" class="form-control" name="nickname" required>
+            </div>
+            <div class="mb-3">
+                <label for="address" class="form-label">Адрес</label>
+                <textarea name="address" class="form-control" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="date_training" class="form-label">Выберите дату</label>
+                <input type="date" class="form-control" name="date_training" required>
+            </div>
+            <div class="mb-3">
+                <label for="time_training" class="form-label">Время</label>
+                <input type="time" class="form-control" name="time_training" required>
+            </div>
+          <button class="btn btn-success" type="submit">Записаться</button>
+        </form>
+    </div>
+</div>

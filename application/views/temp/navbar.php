@@ -1,7 +1,7 @@
-<body>
+<body class="d-flex flex-column h-100">
   <header>
   <nav class="navbar navbar-expand-md" style="background: linear-gradient(90deg,#1862eb,#0673e6,#2a82dd);">
-    <div class="container-fluid">
+    <div class="container">
       <a class="navbar-brand text-white" href="main/">Счастье животных</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -16,6 +16,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="main/feedback">Напишите нам</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="main/price">Цены на услуги</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="main/contacts">Контакты</a>
@@ -62,7 +65,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-              <form action="main/registration" method="post">
+              <form action="main/registration" method="post" enctype="multipart/form-data">
               <div class="mb-3">
                     <label for="fio" class="form-label">ФИО</label>
                     <input type="text" name="fio" class="form-control" required>
@@ -83,6 +86,10 @@
                     <label for="password" class="form-label">Пароль</label>
                     <input type="password" name="password" class="form-control" required>
                 </div>
+                <div class="mb-3">
+                      <label for="photo" class="form-label">Аватар профиля</label>
+                      <input type="file" class="form-control" name="photo">
+                    </div>
                 </div>
                 <div class="modal-footer">
                 <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
@@ -97,3 +104,4 @@
     </div>
   </nav>
 </header>
+<main class="flex-shrink-0">
